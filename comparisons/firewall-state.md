@@ -24,10 +24,10 @@ fi
 
 ## Fleet query
 `SELECT global_state FROM alf;`
-\nCompatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS
+\Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS
 
 `SELECT * FROM windows_firewall_rules;`
-\nCompatible with: 🚫 macOS ✅ Windows 🚫 Linux 🚫 ChromeOS
+\Compatible with: 🚫 macOS ✅ Windows 🚫 Linux 🚫 ChromeOS
 
 `SELECT * FROM iptables;`
-\nCompatible with: 🚫 macOS 🚫 Windows ✅ Linux 🚫 ChromeOS
+\Compatible with: 🚫 macOS 🚫 Windows ✅ Linux 🚫 ChromeOS
