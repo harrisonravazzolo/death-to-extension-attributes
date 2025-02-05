@@ -17,6 +17,6 @@ fi
 /bin/echo "<result>$result</result>"
 ```
 ## Fleet query:
-```SELECT topic FROM mdm```
+```SELECT topic FROM mdm;```
 
 Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS
