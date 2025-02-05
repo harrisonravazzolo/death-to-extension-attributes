@@ -22,6 +22,6 @@ fi
 echo "<result>$result</result>"
 ```
 ## Fleet query:
-```SELECT * FROM battery```
+```SELECT * FROM battery;```
 
 Compatible with: ✅ macOS ✅ Windows 🚫 Linux 🚫 ChromeOS
