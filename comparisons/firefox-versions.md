@@ -12,6 +12,6 @@ FFV=$(/Applications/Firefox.app/Contents/MacOS/firefox --version | awk '{ print 
 echo "<result>$FFV</result>"
 ```
 ## Fleet query:
-```SELECT bundle_short_version FROM apps WHERE name = 'Firefox.app'```
+```SELECT bundle_short_version FROM apps WHERE name = 'Firefox.app';```
 
 Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS
