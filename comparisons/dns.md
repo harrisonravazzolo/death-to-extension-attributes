@@ -9,6 +9,6 @@ NetworkInterface=`/usr/sbin/networksetup -listnetworkserviceorder 2>&1 | grep $(
 echo "<result>`/usr/sbin/networksetup -getdnsservers "$NetworkInterface" 2>&1`</result>"
 ```
 ## Fleet query:
-```SELECT * FROM dns_resolvers```
+```SELECT * FROM dns_resolvers;```
 
 Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS
