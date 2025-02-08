@@ -1,6 +1,6 @@
 # File Sharing
 
-This extension attribute displays whether or not file sharing is enabled.
+This Extension Attribute displays whether or not file sharing is enabled.
  
 ## Extension Attribute:
 ```

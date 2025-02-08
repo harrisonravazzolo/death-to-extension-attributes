@@ -1,6 +1,6 @@
 # Remote Login
 
-This extension attribute displays whether or not remote login enabled.
+This Extension Attribute displays whether or not remote login enabled.
  
 ## Extension Attribute:
 ```

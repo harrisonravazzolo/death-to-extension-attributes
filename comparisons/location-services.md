@@ -1,27 +1,31 @@
-# Battery Health
+# Location Services
 
-The purpose of this Extension Attribute is to display the health of the battery.
+This Extension Attribute displays whether or not location services are enabled.
  
 ## Extension Attribute:
 ```
 #!/bin/bash
 
-# Check battery permanent failure status
-battery_status=$(ioreg -r -c "AppleSmartBattery" | grep "PermanentFailureStatus" | awk '{print $3}' | sed s/\"//g)
+uuid=$(system_profiler SPHardwareDataType | awk -F ": " '/Hardware UUID/ {print $2}')
 
-# Translate numeric status to human-readable result
-if [ "$battery_status" == "1" ]; then
-    result="Failure"
-elif [ "$battery_status" == "0" ]; then
-    result="OK"
+domain="/var/db/locationd/Library/Preferences/ByHost/com.apple.locationd.${uuid}"
+plist="${domain}.plist"
+
+if [[ -f "$plist" ]]; then
+  status=$(/usr/bin/defaults read "$domain" LocationServicesEnabled 2>/dev/null)
+
+  if [[ "$status" == "1" ]]; then
+    result="Enabled"
+  else
+    result="Disabled"
+  fi
 else
-    result="Unknown"
+  result="Unavailable"
 fi
 
-# Output result in XML format
-echo "<result>$result</result>"
+echo "<result>${result}</result>"
 ```
 ## Fleet query:
-```SELECT * FROM battery;```
+```SELECT enabled from location_services```
 
-Compatible with: ✅ macOS ✅ Windows 🚫 Linux 🚫 ChromeOS
+Compatible with: ✅ macOS 🚫 Windows 🚫 Linux 🚫 ChromeOS

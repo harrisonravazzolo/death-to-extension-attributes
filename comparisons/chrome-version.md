@@ -1,6 +1,6 @@
 # Chrome Version
 
-This extension attribute displays version of Chrome installed.
+This Extension Attribute displays version of Chrome installed.
  
 ## Extension Attribute:
 ```

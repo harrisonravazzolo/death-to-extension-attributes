@@ -1,6 +1,6 @@
 # Connected Displays
 
-This extension attribute shows all displays connected to a device.
+This Extension Attribute shows all displays connected to a device.
 
 ## Extension Attribute:
 ```

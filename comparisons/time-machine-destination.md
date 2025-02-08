@@ -1,6 +1,6 @@
 # Time Machine Backup Location
 
-This extension attribute displays the Time Machine backup destination.
+This Extension Attribute displays the Time Machine backup destination.
  
 ## Extension Attribute:
 ```
